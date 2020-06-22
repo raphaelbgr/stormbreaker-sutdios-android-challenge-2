@@ -1,7 +1,7 @@
 package com.stormbreakerstudios.android.challenge
 
 import android.os.Bundle
-import android.support.constraint.ConstraintLayout
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.stormbreakerstudios.android.challenge.databinding.ActivityOnboardingBinding
 import kotlinx.android.synthetic.main.activity_onboarding.*
 
@@ -15,6 +15,7 @@ class Onboarding : BaseActivity() {
         setTransparentStatusBarForKitKatAndAbove()
         setContentView(R.layout.activity_onboarding)
         setMarginForSaveButton()
+        setDatePickerForBirthdayEditText()
     }
 
     private fun setMarginForSaveButton() {
@@ -29,5 +30,9 @@ class Onboarding : BaseActivity() {
             params.bottomMargin + navbarHeight
         )
         bt_save.layoutParams = params
+    }
+
+    private fun setDatePickerForBirthdayEditText() {
+
     }
 }

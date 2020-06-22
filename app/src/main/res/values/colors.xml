@@ -8,4 +8,5 @@
     <color name="white">#FFF</color>
     <color name="gray">#BABABA</color>
     <color name="purple">#605B70</color>
+    <color name="purple_alpha_70">#B3605B70</color>
 </resources>

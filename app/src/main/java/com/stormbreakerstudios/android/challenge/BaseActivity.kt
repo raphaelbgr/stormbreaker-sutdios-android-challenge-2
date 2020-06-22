@@ -1,9 +1,9 @@
 package com.stormbreakerstudios.android.challenge
 
 import android.os.Build
-import android.support.v7.app.AppCompatActivity
 import android.view.Window
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 
 abstract class BaseActivity : AppCompatActivity() {
     val navigator: Navigator by lazy(LazyThreadSafetyMode.PUBLICATION) { Navigator() }
