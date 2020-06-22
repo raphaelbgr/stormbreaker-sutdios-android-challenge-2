@@ -7,4 +7,8 @@ class Navigator {
     fun navigateToOnboardingScreen(context: Context) {
         context.startActivity(Intent(context, OnboardingActivity::class.java))
     }
+
+    fun navigateToMainScreen(context: Context) {
+        context.startActivity(Intent(context, MainActivity::class.java))
+    }
 }

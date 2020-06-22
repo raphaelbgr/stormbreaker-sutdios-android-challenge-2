@@ -13,8 +13,6 @@ import com.stormbreakerstudios.android.challenge.util.TimePickerFragment
 class OnboardingActivity : BaseActivity(), DatePickerFragment.DatePickerListener,
     TimePickerFragment.TimePickerListener, AdapterView.OnItemSelectedListener {
 
-    private val TAG = OnboardingActivity::class.java.simpleName
-
     private lateinit var viewBinding: ActivityOnboardingBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -83,9 +81,10 @@ class OnboardingActivity : BaseActivity(), DatePickerFragment.DatePickerListener
     }
 
     fun onBoardSaved(view: View) {
-        if (isFormValid())
+        if (isFormValid()) {
+            navigator.navigateToMainScreen(this)
             finish()
-        else
+        } else
             toastLong("There are missing fields to fill.")
     }
 }
