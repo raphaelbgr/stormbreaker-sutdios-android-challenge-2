@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Onboarding"
+            android:theme="@style/TranslucentBackgroundedScreen.OnboardingScreen" />
+        <activity
             android:name=".SplashActivity"
-            android:theme="@style/SplashScreen">
+            android:theme="@style/TranslucentBackgroundedScreen.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

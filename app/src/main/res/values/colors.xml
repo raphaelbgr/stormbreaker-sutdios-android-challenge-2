@@ -6,4 +6,6 @@
 
     <!-- App colors -->
     <color name="white">#FFF</color>
+    <color name="gray">#BABABA</color>
+    <color name="purple">#605B70</color>
 </resources>

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
@@ -6,18 +6,43 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <!-- Base application theme. -->
-    <style name="SplashScreen" parent="AppTheme">
-        <!-- Customize your theme here. -->
+
+    <style name="TranslucentBackgroundedScreen" parent="AppTheme">
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
         <item name="android:windowBackground">@drawable/graphic_launcher</item>
     </style>
+
+    <style name="TranslucentBackgroundedScreen.SplashScreen" />
+
+    <style name="TranslucentBackgroundedScreen.OnboardingScreen" />
 
     <style name="TextView" parent="TextAppearance.AppCompat">
         <item name="fontFamily">sans-serif-medium</item>
     </style>
 
     <style name="TextView.Title" parent="TextAppearance.AppCompat">
-        <item name="android:textSize">28sp</item>
+        <item name="android:textSize">44sp</item>
         <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextView.Subtitle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BoxedEditText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_marginStart">@dimen/activity_default_horizontal_margin</item>
+        <item name="android:layout_marginEnd">@dimen/activity_default_horizontal_margin</item>
+        <item name="android:padding">@dimen/default_edit_text_inside_padding</item>
+        <item name="android:background">@drawable/rounded_white_background_6dp</item>
+    </style>
+
+    <style name="PrimaryButton" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/rounded_primary_button_background</item>
+        <item name="android:minHeight">@dimen/button_default_min_height</item>
     </style>
 </resources>
