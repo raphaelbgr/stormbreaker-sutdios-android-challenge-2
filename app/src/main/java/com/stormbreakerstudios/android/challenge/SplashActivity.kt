@@ -9,5 +9,6 @@ class SplashActivity : BaseActivity() {
         setTransparentStatusBarForKitKatAndAbove()
         setContentView(R.layout.activity_splash)
         navigator.navigateToOnboardingScreen(this)
+        finish()
     }
 }

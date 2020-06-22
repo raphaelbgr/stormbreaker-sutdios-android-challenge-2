@@ -5,6 +5,6 @@ import android.content.Intent
 
 class Navigator {
     fun navigateToOnboardingScreen(context: Context) {
-        context.startActivity(Intent(context, Onboarding::class.java))
+        context.startActivity(Intent(context, OnboardingActivity::class.java))
     }
 }

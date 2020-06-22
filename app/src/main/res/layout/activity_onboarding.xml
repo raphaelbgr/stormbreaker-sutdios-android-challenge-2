@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_title"
         app:layout_constraintVertical_bias="0" />
 
-    <EditText
+    <TextView
         android:id="@+id/et_birth"
         style="@style/BoxedEditText"
         android:layout_width="0dp"
@@ -41,13 +41,14 @@
         android:layout_marginTop="@dimen/activity_default_vertical_margin"
         android:drawableEnd="@drawable/sl_calendar_icon_selector"
         android:hint="@string/date_of_birth"
+        android:onClick="showDatePickerDialog"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_subtitle"
         app:layout_constraintVertical_bias="0.10" />
 
-    <EditText
+    <TextView
         android:id="@+id/et_meditation_time"
         style="@style/BoxedEditText"
         android:layout_width="0dp"
@@ -55,13 +56,14 @@
         android:layout_marginTop="@dimen/activity_default_vertical_margin"
         android:drawableEnd="@drawable/sl_clock_icon_selector"
         android:hint="@string/preferred_meditation_time"
+        android:onClick="showTimePickerDialog"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_birth"
         app:layout_constraintVertical_bias="0" />
 
-    <EditText
+    <TextView
         android:id="@+id/et_time_zone"
         style="@style/BoxedEditText"
         android:layout_width="0dp"
@@ -69,6 +71,23 @@
         android:layout_marginTop="@dimen/activity_default_vertical_margin"
         android:drawableEnd="@drawable/sl_globe_icon_selector"
         android:hint="@string/time_zone"
+        android:onClick="showTimeZoneSpinnerDialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_meditation_time"
+        app:layout_constraintVertical_bias="0" />
+
+    <Spinner
+        android:id="@+id/sp_time_zone"
+        style="@style/BoxedEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_default_vertical_margin"
+        android:drawableEnd="@drawable/sl_globe_icon_selector"
+        android:hint="@string/time_zone"
+        android:spinnerMode="dialog"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,11 +100,11 @@
         android:layout_width="@dimen/button_default_width"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/activity_default_vertical_margin"
+        android:onClick="onBoardSaved"
         android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_time_zone"
         app:layout_constraintVertical_bias="1" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

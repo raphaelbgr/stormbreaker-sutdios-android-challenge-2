@@ -4,6 +4,7 @@ import android.os.Build
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 
@@ -13,6 +14,10 @@ abstract class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true)
+    }
+
+    fun toastLong(text: String) {
+        Toast.makeText(this, text, Toast.LENGTH_LONG).show()
     }
 
     fun setTransparentStatusBarForKitKatAndAbove() {

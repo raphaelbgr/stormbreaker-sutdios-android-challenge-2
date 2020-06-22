@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_array">
+        <item>USA | Orlando (GMT -04:00)</item>
+        <item>BRA | São Paulo (GMT -03:00)</item>
+        <item>ENG | London (GMT 00:00)</item>
+        <item>CHN | Beijing (GMT +08:00)</item>
+        <item>JPN | Tokyo (GMT +09:00)</item>
+    </string-array>
+</resources>

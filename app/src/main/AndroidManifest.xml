@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Onboarding"
+            android:name=".OnboardingActivity"
             android:theme="@style/TranslucentBackgroundedScreen.OnboardingScreen" />
         <activity
             android:name=".SplashActivity"

@@ -42,6 +42,7 @@
     <style name="PrimaryButton" parent="TextAppearance.AppCompat.Widget.Button">
         <item name="textAllCaps">true</item>
         <item name="android:textColor">@color/white</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
         <item name="android:background">@drawable/rounded_primary_button_background</item>
         <item name="android:minHeight">@dimen/button_default_min_height</item>
     </style>
