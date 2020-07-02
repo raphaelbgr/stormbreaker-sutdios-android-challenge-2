@@ -3,14 +3,14 @@
 - Status: To Do
 - Labels: Android
 - Priority: Medium
-- Assignee: 
 - Reporter: Marcos Silva
 
 ## Delivery
 - Delivery instructions:
-    1. Create a new GitHub repo exclusively for the project
+    1. Create a new GitHub repo exclusively for the test
+        - You may not reuse your previous repo
     2. Make commits as you normally would
-    3. At the end of the 5h, give access to mediumhotcoffee (msilva@fastmail.com) 
+    3. At the end of the 3h, give access to mediumhotcoffee (msilva@fastmail.com) 
         - The delivery time is counted as the time of the invite; if the invite is sent when the repo is created and contains no relevant files, the applicant will be disqualified
         - Any commits past the deadline will not be considered
 - Reminders:
@@ -18,7 +18,18 @@
     - The test must compile when received (warnings are OK, but try to minimize them)
         - If the project doesn't compile on the most recent Android Studio stable build, the applicant will be disqualified
 
-## Info
+## Requirements
+- Reimplement the previous test in another language:
+    - Java -> Kotlin
+    - Kotlin -> Java
+- You may use your time to make fixes to your previous submission as well
+    - Fixes must be made on the new repo to be considered
+- Both need to be uploaded to the same repo
+    - Using the old repo disqualifies the applicant
+
+## Originals
+
+### Info
 - We have a new client and they want a basic app they can see on their phone
 - Client requested that this app runs on medium sized devices and up
 - Fonts:
@@ -32,9 +43,8 @@
     - Red: `#D51236`
     - Light gray: `#BABABA`
     - Yellow: `#FFFF8C`
-- [Prototype](https://www.sketch.com/s/74cb3d71-6dda-4e24-83c7-bfb95a0f6a07)
 
-## Requirements
+### Requirements
 - Match screens as close as possible to the prototype
 - Launch screen
     - Using the _graphic-launcher_ asset, add a launcher theme to the app
