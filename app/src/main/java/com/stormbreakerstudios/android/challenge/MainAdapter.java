@@ -60,7 +60,7 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                             Arrays.asList(
                                     new ShowcaseFakeData("5 min", R.drawable.couch),
                                     new ShowcaseFakeData("10 min", R.drawable.blonde),
-                                    new ShowcaseFakeData("20 min", R.drawable.flower)
+                                    new ShowcaseFakeData("15 min", R.drawable.flower)
                             )
                     )
             );
