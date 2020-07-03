@@ -1,5 +1,6 @@
 package com.stormbreakerstudios.android.challenge;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -123,6 +124,8 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     .load(R.drawable.article_of_day)
                     .fit()
                     .into((ImageView) itemView.findViewById(R.id.iv_article_of_the_day));
+
+            itemView.setOnClickListener((v) -> itemView.getContext().startActivity(new Intent(itemView.getContext(), PlaylistActivity.class)));
         }
     }
 
@@ -169,14 +172,17 @@ public class MainAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 case 0: {
                     Picasso.get().load(showcaseFakeData.get(position).img).fit().into((ImageView) holder.itemView.findViewById(R.id.iv_article));
                     ((TextView) holder.itemView.findViewById(R.id.tv_article_title)).setText(showcaseFakeData.get(position).text);
+                    holder.itemView.setOnClickListener((v) -> holder.itemView.getContext().startActivity(new Intent(holder.itemView.getContext(), PlaylistActivity.class)));
                 }
                 case 1: {
                     Picasso.get().load(showcaseFakeData.get(position).img).fit().into((ImageView) holder.itemView.findViewById(R.id.iv_article));
                     ((TextView) holder.itemView.findViewById(R.id.tv_article_title)).setText(showcaseFakeData.get(position).text);
+                    holder.itemView.setOnClickListener((v) -> holder.itemView.getContext().startActivity(new Intent(holder.itemView.getContext(), PlaylistActivity.class)));
                 }
                 case 2: {
                     Picasso.get().load(showcaseFakeData.get(position).img).fit().into((ImageView) holder.itemView.findViewById(R.id.iv_article));
                     ((TextView) holder.itemView.findViewById(R.id.tv_article_title)).setText(showcaseFakeData.get(position).text);
+                    holder.itemView.setOnClickListener((v) -> holder.itemView.getContext().startActivity(new Intent(holder.itemView.getContext(), PlaylistActivity.class)));
                 }
             }
         }
