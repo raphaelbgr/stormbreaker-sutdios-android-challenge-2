@@ -9,4 +9,10 @@
     <string name="article_of_the_day">Article of the Day</string>
     <string name="just_looking_overrated">Just Looking: Overrated?</string>
     <string name="featured_articles">Fatured Articles</string>
+    <string name="title_activity_playlist">PlaylistActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="playlist">Playlist</string>
+    <string name="articles">Articles</string>
+    <string name="about">About</string>
 </resources>

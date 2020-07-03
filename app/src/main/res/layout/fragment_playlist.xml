@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PlaceholderFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_article_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="@dimen/activity_default_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_default_vertical_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/TextView.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_default_horizontal_margin"
+            android:text="Peace Playlist"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_article_pic"
+            app:layout_constraintTop_toTopOf="@+id/iv_article_pic" />
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            style="@style/TextView.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_default_horizontal_margin"
+            android:text="By Peace Time"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_article_pic"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/iv_article_initials"
+            style="@style/TextView.Title"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="PT"
+            android:textAlignment="center"
+            android:textSize="46dp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_article_pic"
+            app:layout_constraintEnd_toEndOf="@id/iv_article_pic"
+            app:layout_constraintStart_toStartOf="@id/iv_article_pic"
+            app:layout_constraintTop_toTopOf="@id/iv_article_pic" />
+
+        <Button
+            android:id="@+id/bt_like"
+            style="@style/LikeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/sl_bulb_icon_selector"
+            android:drawablePadding="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Like"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_article_pic"
+            app:layout_constraintStart_toStartOf="@+id/tv_subtitle"
+            app:layout_constraintTop_toBottomOf="@+id/tv_subtitle"
+            app:layout_constraintVertical_bias="1" />
+
+        <Button
+            style="@style/LikeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/activity_default_horizontal_margin"
+            android:drawableStart="@drawable/sl_share_icon_selector"
+            android:drawablePadding="8dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Share"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_article_pic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_like"
+            app:layout_constraintTop_toBottomOf="@+id/tv_subtitle"
+            app:layout_constraintVertical_bias="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_default_vertical_margin"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_default_vertical_margin"
+            app:layout_constraintTop_toBottomOf="@+id/iv_article_initials">
+
+            <include layout="@layout/article_playlist_lotus_focus" />
+
+            <include
+                layout="@layout/article_playlist_peaceful_thoughts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_default_vertical_margin" />
+
+            <include
+                layout="@layout/article_playlist_peaceful_thoughts_worth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_default_vertical_margin" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

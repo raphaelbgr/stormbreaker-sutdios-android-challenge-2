@@ -46,4 +46,19 @@
         <item name="android:background">@drawable/rounded_primary_button_background</item>
         <item name="android:minHeight">@dimen/button_default_min_height</item>
     </style>
+
+    <style name="LikeButton" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:background">@drawable/rounded_like_button_background</item>
+        <item name="android:minHeight">@dimen/button_default_min_height</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 </resources>
